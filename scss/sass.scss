@@ -1,0 +1,663 @@
+@import "basePaginas";
+@import "menu";
+
+
+@mixin sizes($width,$height) { 
+	width: $width;
+	height: $height;
+  };
+
+/* ///////////////////////////////////////// COMIENZO DE CONTENIDO PRINCIPAL ///////////////////////////////////////// */
+
+/* Variables */
+
+$fTitulo: 'Orbitron', sans-serif;
+$colorTitulo: rgb(243, 232, 232);
+
+
+.titulo {
+	color: $colorTitulo;
+	font-size: 40px;
+	text-align: center;
+	border-bottom-style: double;
+	border-top-style: double;
+	border-color: antiquewhite;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	letter-spacing: 3px;
+	font-family: $fTitulo;
+  }
+
+  #listaDePaginas  {
+	margin-left: 320px;
+	margin-right: 300px;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+	letter-spacing: 40px;
+	padding: 1em;
+	text-decoration: none;
+	list-style: none;
+
+    a{
+        width: 100%;
+        letter-spacing: 15px;
+        padding-left: 8px;
+        padding-right: 8px;
+        letter-spacing: 20px;
+        list-style: none;
+        text-decoration: none;
+        color: rgb(203, 233, 31);
+        font-size: small;
+        font-family: cursive;
+        margin-left: 20px;
+
+        &:hover {
+            text-decoration: wavy;
+            list-style: none;
+            color: rgb(141, 141, 141);
+            font-family: $fTitulo;
+          }
+      }
+  }
+
+
+  .card {
+	background-color: transparent;
+	font-family: 'Bangers', cursive;
+	text-align: center;
+	width: 250px;
+	height: 380px;
+	margin-left: 5px;
+	margin-right: 5px;
+	display: inline-block;
+	box-sizing: 250px;
+	color: #c7c7c7;
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+  }
+
+  .contenedor-tarjetas {
+    margin: 60px 160px;
+	width: 789px;
+  }
+
+/* inicio del grid del id #grids de la linea 42 del hatml index.html y en los html de tiendas*/
+
+  #grids {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+  }
+
+  /* fin del grid del id #grids */
+
+
+
+  .parrafo-inferior {
+	color: white;
+	border-bottom-style: double;
+	border-top-style: double;
+	border-color: antiquewhite;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-size: 20px ;
+	text-align: center;
+	line-height: 80px;
+	letter-spacing: 3px;
+  }
+
+  .listado {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	list-style: none;
+	font-size: x-large;
+	letter-spacing: 1px;
+  }
+
+  .hover:hover {
+	color: coral;
+	font-size: 35px;
+  }
+
+/* ///////////////////////////////////////// FIN DEL CONTENIDO PRINCIPAL ///////////////////////////////////////// */
+
+
+/* ////////////////////////////////////// COMIENZO DE FORMULARIO INICIO CONTACTO ////////////////////////////////////// */
+	.form-register {
+   width: 400px;
+   background: #d40000af;
+   padding: 10px;
+   margin: auto;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   border-radius: 4px;
+   font-family: 'calibri';
+   color: white;
+   text-align: center;
+   box-shadow: 1px 13px 37px rgb(148, 148, 148);
+   padding-bottom: 15px;
+   transition: all 2s ease;
+   border-top: 3px solid white;
+
+   &:hover {
+	width: 550px;
+	background: #ca3d3d;
+	padding: 10px;
+	font-family: 'calibri';
+	color: white;
+	text-align: center;
+	box-shadow: 1px 13px 37px rgba(116, 184, 204, 0.445);
+	padding-bottom: 15px;
+	border: 2px solid white;
+  }
+
+  h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+  }
+
+  p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  a {
+   color: white;
+   text-decoration: none;
+
+   &:hover {
+	color: white;
+	text-decoration: underline;
+   }
+  }
+
+  .botons {
+    width: 50%;
+    background: #1a3629;
+    border: none;
+    padding: 5px;
+    color: #ff06d6;
+    margin: 50px 0;
+    font-size: 16px;
+    transition: all 1s ease;
+
+    &:hover {
+        width: 35%;
+        background: #ff5100;
+        border: none;
+        padding: 5px;
+        color:  #000000;
+        margin: 50px 0;
+        font-size: 16px;
+        border-radius: 25px;
+        border: 2px solid #c7c7c7;
+      }
+  }
+ }
+
+ .controls {
+   width: 100%;
+   background: #2c4247;
+   padding: 10px;
+   border-radius: 4px;
+   margin-bottom: 16px;
+   border: 1px solid #8bff5d;
+   font-family: 'calibri';
+   font-size: 18px;
+   color: white;
+ }
+
+
+ /* ////////////////////////////////////// FIN DE FORMULARIO INICIO CONTACTO ////////////////////////////////////// */
+
+/* /////////////////////////////////////////////// INICIO DEL FOOTER /////////////////////////////////////////////// */
+
+ .footer {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  font-style: italic;
+  font-size: medium;
+  background-color: rgba(138, 134, 132, 0.329);
+  color: rgb(0, 0, 0);
+  text-decoration-line: none;
+  list-style: none;
+  transition: all 2s ease;
+  border-top: 3px solid white;
+
+    &:hover {
+        width: 100%;
+        border-bottom: 3px solid white;
+        border-top: 3px solid transparent;
+        color: white;
+        font-family: 'Bangers', cursive;
+       }
+ }
+
+ .caja {
+  display: flex;
+  justify-content: space-around;
+  text-decoration-line: none;
+  list-style: none;
+  text-decoration: none;
+  list-style: none;
+
+    ul {
+        list-style: none;
+        text-decoration: none;
+        color: black ;
+    }
+ }
+
+ .medias {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 0px;
+ }
+
+ 
+.redes{
+align-items: bottom;
+@include sizes (50px, 50px);
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  padding-top: 20px;
+}
+
+/* /////////////////////////////////////////////// FIN DEL FOOTER /////////////////////////////////////////////// */
+
+
+
+/* /////////////////////////////////////////////----------------------///////////////////////////////////////////// */
+/* /////////////////////////////////////////////----------------------///////////////////////////////////////////// */
+/* /////////////////////////////////////////////    MEDIA  QUERIES    ///////////////////////////////////////////// */
+/* /////////////////////////////////////////////----------------------///////////////////////////////////////////// */
+/* /////////////////////////////////////////////----------------------///////////////////////////////////////////// */
+
+
+
+
+@media only screen and (max-width: 521px) {
+	/*Tablets [426px -> 600px]*/
+		 /* ///////////////////////////////////////////// INICIO DEL ENCABEZADO ///////////////////////////////////////////// */
+
+
+
+		 .header{
+			width: 100%;
+			height: 70px;
+			background-color: rgb(60, 133, 0);
+			border-bottom: 5px white;
+			border-bottom-style: double;
+			scrollbar-width: none;
+			display: grid;    justify-content: center;
+		}
+
+		.container{
+			width: 100%;
+			margin: none;
+			font-size: small;
+			color: white;
+
+            .btn-menu {
+                float: left;
+                line-height: 50px;
+                margin-left: 10px;
+                margin-right: 1vh;
+
+                label{
+                    position: sticky;
+                    color: rgb(0, 0, 0);
+                    font-size: 25px
+                }
+            }
+            
+            .logo{
+                float: left;
+                line-height: 50px;
+                margin-left: 10px;
+                margin-right: 1vh;
+
+                h1{
+                    display: none;
+                }
+            }
+
+            .menu{
+                float: right;
+                right: 20px;
+                line-height: 50px;
+                margin-left: 10px;
+
+                a{
+                    position: sticky;
+                    display: inline-block;
+                    padding: 1px;
+                    line-height: normal;
+                    text-decoration: none;
+                    color: #fff;
+                    border-right: 3px solid #00000083;
+                    border-top: 3px solid #00000080;
+                    font-size: 13px;
+                }
+
+                .A1{
+                    background-color: #04e70f88;
+                }
+        
+                .A2{
+                    background-color: #ec10108e;
+                }
+        
+                .A3{
+                    background-color: #04b2e78c;
+                }
+        
+                .A4{
+                    background-color: #e704c98a;
+                }
+            }
+		}
+
+		
+		/* ///////////////////////////////////////////// FIN DEL ENCABEZADO ///////////////////////////////////////////// */
+
+		/* ///////////////////////////////////////////// INICIO MENU LATERAL ///////////////////////////////////////////// */
+
+		#btn-menu{
+			display: none;
+			position: sticky;
+
+            &:checked ~ .container-menu{
+                opacity: 1;
+                visibility: visible;
+
+                .cont-menu{
+                    transform: translateX(0%);
+                    background-color: transparent
+                }
+            }
+		}
+
+		.container-menu{
+			margin-left: -38px;
+			background: #B8BAB8;
+			width: 50%;
+			height: 60px;
+			top: 0;
+			left: 0;
+			transition: all 500ms ease;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.cont-menu{
+			width: 100%;
+			max-width: 250px;
+			background: #050a05;
+			height: 100px;
+			position: relative;
+			transition: all 500ms ease;
+			transform: translateX(-100%);
+
+            nav{
+			transform: translateY(-1%);
+			background-color: rgb(255, 255, 255);
+
+                a{
+                    display: block;
+                    padding: 10px;
+                    padding-left: 5px;
+                    color: #000000;
+                }
+		    }
+
+            .n1{
+                background-color: #04e70f8a;
+            }
+    
+            .n2{
+                background-color: #ec101081;
+            }
+    
+            .n3{
+                background-color: #04b2e786;
+            }
+    
+            .n4{
+                background-color: #e704c986;
+            }
+		}
+
+		
+
+
+		/* ///////////////////////////////////////////// FIN DE MENU LATERAL ///////////////////////////////////////////// */
+
+
+		/* ///////////////////////////////////////// COMIENZO DE CONTENIDO PRINCIPAL ////////////////////////////////////// */
+
+		.principal{
+			margin: -10px -10px;
+		}
+
+		.titulo {
+			color: white;
+			font-size: 25px;
+			text-align: center;
+			border-bottom-style: double;
+			border-top-style: double;
+			border-color: antiquewhite;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			width: 100%;
+		  }
+
+		  #listaDePaginas  {
+			margin-left: 1px;
+			margin-top: 40px;
+
+            a  {
+                width: 100%;
+                letter-spacing: 15px;
+                padding-left: 8px;
+                padding-right: 8px;
+                color: white;
+                font-size: small;
+            }
+		  }
+
+		  .card {
+			background-color: transparent;
+			border: none;
+			border-radius: 10px;
+			text-align: center;
+			width: auto;
+			height: 330px;
+			margin: 0 auto;
+			display: grid;
+			align-items: center;
+			box-sizing: 250px;
+			color: #c7c7c7;
+
+            img {
+			    width: 200px;
+			    height: 200px;
+			    object-fit: cover;
+			    border-top-left-radius: 10px;
+			    border-top-right-radius: 10px;
+		    }
+		  }
+
+		  .contenedor-tarjetas {
+		    width: auto;
+    		margin: 60px 95px
+		  }
+
+		/* inicio del grid del id #grids de la linea 42 del hatml index.html y en los html de tiendas*/
+
+		  #grids {
+			display: block;
+			align-items: center;
+			gap: 20px;
+		  }
+
+		  /* fin del grid del id #grids */
+
+
+		  .pendiente {
+			  width: 150px;
+			  height: 150px;
+		  }
+
+		  .parrafo-inferior {
+			color: white;
+			border-bottom-style: double;
+			border-top-style: double;
+			border-color: antiquewhite;
+			margin-top: 10em;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			font-size: 13px ;
+			text-align: center;
+			line-height: 80px;
+			letter-spacing: 3px;
+			background-color: #ff48007a;
+			width: 100%;
+		  }
+
+		  .listado {
+			font-size: medium;
+			padding-bottom: 5px;
+			display: grid;
+			align-items: center;
+			text-align: center;
+			text-decoration: none;
+			list-style: none;
+			color: rgba(89, 226, 10, 0.774);
+
+        ul {
+          padding: 0px;
+        }
+		  }
+
+		  .form-register {
+			width: 400px;
+			background: #d40000af;
+			padding: 10px;
+			margin: auto;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			border-radius: 4px;
+			font-family: 'calibri';
+			color: white;
+			text-align: center;
+			box-shadow: 1px 13px 37px rgb(148, 148, 148);
+			padding-bottom: 15px;
+		  transition: all 2s ease;
+			border-top: 3px solid white;
+		 
+			&:hover {
+				width: 400px;
+				background: #d40000af;
+				padding: 10px;
+				margin: auto;
+				margin-top: 50px;
+				margin-bottom: 50px;
+				border-radius: 4px;
+				font-family: 'calibri';
+				color: white;
+				text-align: center;
+				box-shadow: 1px 13px 37px rgb(148, 148, 148);
+				padding-bottom: 15px;
+				border-top: 3px solid white;
+				}
+		   }
+
+
+
+
+		/* ///////////////////////////////////////// FIN DEL CONTENIDO PRINCIPAL ///////////////////////////////////////// */
+
+
+		/* /////////////////////////////////////////////// INICIO DEL FOOTER /////////////////////////////////////////////// */
+
+
+		.containerFooter{
+			margin: auto;
+
+		}
+
+		.footer {
+		  width: 100%;
+		  padding-top: 30px;
+		  padding-bottom: 10px;
+		  justify-content: center;
+		  color: rgb(206, 206, 206);
+		  border-top: 3px solid white;
+		  background-color: rgba(255, 0, 191, 0.288);
+		  font-size: x-small;
+		}
+
+		.caja h2{
+			font-size: medium;
+      ul {
+        li  {
+          display: none;
+        }
+      }
+		}
+
+		
+
+		.medias {
+    	display: flex;
+    	flex-direction: column;
+		align-items: center;
+		}
+
+		#cajaDeRedes {
+			display: grid;
+			justify-items: center;
+			margin-right: 25px;
+		}
+
+		.redes {
+		  display: inline-block;
+		  align-items: center;
+		  width: 50px;
+		  height: 40px;
+		  padding-left: 8px;
+		  padding-right: 8px;
+		}
+
+		.copyright {
+		  display: flex;
+		  flex-direction: row;
+		  justify-content: center;
+		  color: white;
+		  padding-top: 15px;
+		  font-size: 15px;
+		}
+
+		/* ///////////////////////////////////////////// FIN DEL FOOTER ///////////////////////////////////////////// */
+
+	 }

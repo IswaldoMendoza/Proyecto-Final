@@ -1,0 +1,26 @@
+En la pagina "tiendita3.html", veran que me falto linkear
+bien, la direccion de la hoja css era anterior a la 
+edicion de la pagina, luego de aplicar sass crei haber
+ingresado la direccion pero me olvide en esta hoja de 
+aplicarlo.
+
+En el la pagina que esta subida al servidor esta disponible
+la pagina "tiendita3.html" con la direccion web correcta.
+
+En este momento dejo este .txt para aclarar esto porque
+no tengo computadora y toda esta pagina la termine de 
+hacer entre una tablet y un telefono con una aplicacion
+de editor de codigo. 
+
+Espero entiendan que se me complico un poco y no he podido
+solucionar esta pagina, pero en lo que tenga un momento
+con una computadora disponible lo arreglo para que este
+todo en orden.
+
+Saludos y buen dia a quien lee esto. <3
+
+En la etiqueta Meta para las keywords de SEO se agregaron:
+videojuegos, retro, psx, ps2, ps3, ps4, ps5, xbox, xbox one, xbox live, steam, gba, gameboy advance, gameboy, nintento, gamecube, roms, emulador, juego digital, juegos digitales, descargar, comprar, buscar, terror, suspenso, accion, rpg, ciencia ficcion, SF, realidad vIrtual, sega, genesis, atari, xbox 360, psp, psp 2, nintendo ds, nintendo ds xl, nintendo swich, computadora, consolas, equipos, mandos, avance, expansion, parche, patch, emulador, psxness, gba emulator.
+
+En la etiqueta Meta para la descripcion de la pagina se agrego:
+En Checkpoint tienes disponible géneros desde aventura y terror, hasta acción y rpg. Puedes conseguir muchas opciones en nuestra tienda del buhonero, ingresa para conocer más.

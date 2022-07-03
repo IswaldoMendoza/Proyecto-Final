@@ -1,0 +1,791 @@
+html {
+  box-sizing: border-box;
+  font-family: "Bangers", cursive;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: grey;
+}
+
+.capaDeOpacidad {
+  background-color: rgba(128, 128, 128, 0.493);
+}
+
+/* ///////////////////////////////////////////// INICIO DEL ENCABEZADO ///////////////////////////////////////////// */
+/* Mixing */
+/* map-get */
+.header {
+  width: 100%;
+  height: 77px;
+  background-color: rgb(92, 92, 92);
+  transition: all 0.3s ease;
+  border-bottom: 3px double black;
+  scrollbar-width: none;
+}
+.header:hover {
+  background-color: rgb(255, 81, 0);
+  border-bottom: 5px white;
+  border-bottom-style: ridge;
+  width: 100%;
+  height: 90px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.container .btn-menu {
+  float: left;
+  line-height: 100px;
+}
+.container .btn-menu label {
+  position: -webkit-sticky;
+  position: sticky;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+.container .logo {
+  float: left;
+  line-height: 100px;
+}
+.container .logo h1 {
+  position: -webkit-sticky;
+  position: sticky;
+  color: #fff;
+  font-weight: 400;
+  font-size: 30px;
+  margin-left: 10px;
+}
+.container .menu {
+  position: -webkit-sticky;
+  position: sticky;
+  float: right;
+  line-height: 100px;
+}
+.container .menu a {
+  position: -webkit-sticky;
+  position: sticky;
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #c7c7c7;
+  border-top: 3px solid #c7c7c7;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.container .menu a:hover {
+  position: -webkit-sticky;
+  position: sticky;
+  border-bottom: 3px solid #c7c7c7;
+  border-left: 3px solid #c7c7c7;
+  border-right: 3px solid transparent;
+  border-top: 3px solid transparent;
+  padding-bottom: 5px;
+}
+.container .menu .A1:hover {
+  background-color: #04e70f;
+}
+.container .menu .A2:hover {
+  background-color: #ec1010;
+}
+.container .menu .A3:hover {
+  background-color: #04b2e7;
+}
+.container .menu .A4:hover {
+  background-color: #e704c9;
+}
+
+/* ///////////////////////////////////////////// FIN DEL ENCABEZADO ///////////////////////////////////////////// */
+/* ///////////////////////////////////////////// INICIO MENU LATERAL ///////////////////////////////////////////// */
+.container-menu {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btn-menu {
+  display: none;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #110D0D;
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+
+.cont-menu nav {
+  transform: translateY(15%);
+}
+
+.cont-menu nav a {
+  display: block;
+  padding: 20px;
+  padding-left: 20px;
+  color: white;
+  text-transform: uppercase;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+
+.n1:hover {
+  border-left: 35px solid #04e70f;
+  background: rgba(21, 255, 0, 0.2);
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+.n2:hover {
+  border-left: 35px solid #ec1010;
+  background: rgba(236, 16, 16, 0.2549019608);
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+.n3:hover {
+  border-left: 35px solid #04b2e7;
+  background: rgba(4, 178, 231, 0.2274509804);
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+.n4:hover {
+  border-left: 35px solid #e704c9;
+  background: rgba(231, 4, 201, 0.2274509804);
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+.cont-menu nav a:hover {
+  color: #000000;
+}
+
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: rgb(255, 136, 0);
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/* ///////////////////////////////////////////// FIN DE MENU LATERAL ///////////////////////////////////////////// */
+/* ///////////////////////////////////////// COMIENZO DE CONTENIDO PRINCIPAL ///////////////////////////////////////// */
+/* Variables */
+.titulo {
+  color: rgb(243, 232, 232);
+  font-size: 40px;
+  text-align: center;
+  border-bottom-style: double;
+  border-top-style: double;
+  border-color: antiquewhite;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  letter-spacing: 3px;
+  font-family: "Orbitron", sans-serif;
+}
+
+#listaDePaginas {
+  margin-left: 320px;
+  margin-right: 300px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 40px;
+  padding: 1em;
+  text-decoration: none;
+  list-style: none;
+}
+#listaDePaginas a {
+  width: 100%;
+  letter-spacing: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
+  letter-spacing: 20px;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(203, 233, 31);
+  font-size: small;
+  font-family: cursive;
+  margin-left: 20px;
+}
+#listaDePaginas a:hover {
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  list-style: none;
+  color: rgb(141, 141, 141);
+  font-family: "Orbitron", sans-serif;
+}
+
+.card {
+  background-color: transparent;
+  font-family: "Bangers", cursive;
+  text-align: center;
+  width: 250px;
+  height: 380px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  box-sizing: 250px;
+  color: #c7c7c7;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.contenedor-tarjetas {
+  margin: 60px 160px;
+  width: 789px;
+}
+
+/* inicio del grid del id #grids de la linea 42 del hatml index.html y en los html de tiendas*/
+#grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* fin del grid del id #grids */
+.parrafo-inferior {
+  color: white;
+  border-bottom-style: double;
+  border-top-style: double;
+  border-color: antiquewhite;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 80px;
+  letter-spacing: 3px;
+}
+
+.listado {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  font-size: x-large;
+  letter-spacing: 1px;
+}
+
+.hover:hover {
+  color: coral;
+  font-size: 35px;
+}
+
+/* ///////////////////////////////////////// FIN DEL CONTENIDO PRINCIPAL ///////////////////////////////////////// */
+/* ////////////////////////////////////// COMIENZO DE FORMULARIO INICIO CONTACTO ////////////////////////////////////// */
+.form-register {
+  width: 400px;
+  background: rgba(212, 0, 0, 0.6862745098);
+  padding: 10px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: white;
+  text-align: center;
+  box-shadow: 1px 13px 37px rgb(148, 148, 148);
+  padding-bottom: 15px;
+  transition: all 2s ease;
+  border-top: 3px solid white;
+}
+.form-register:hover {
+  width: 550px;
+  background: #ca3d3d;
+  padding: 10px;
+  font-family: "calibri";
+  color: white;
+  text-align: center;
+  box-shadow: 1px 13px 37px rgba(116, 184, 204, 0.445);
+  padding-bottom: 15px;
+  border: 2px solid white;
+}
+.form-register h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.form-register .botons {
+  width: 50%;
+  background: #1a3629;
+  border: none;
+  padding: 5px;
+  color: #ff06d6;
+  margin: 50px 0;
+  font-size: 16px;
+  transition: all 1s ease;
+}
+.form-register .botons:hover {
+  width: 35%;
+  background: #ff5100;
+  border: none;
+  padding: 5px;
+  color: #000000;
+  margin: 50px 0;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 2px solid #c7c7c7;
+}
+
+.controls {
+  width: 100%;
+  background: #2c4247;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #8bff5d;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+
+/* ////////////////////////////////////// FIN DE FORMULARIO INICIO CONTACTO ////////////////////////////////////// */
+/* /////////////////////////////////////////////// INICIO DEL FOOTER /////////////////////////////////////////////// */
+.footer {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  font-style: italic;
+  font-size: medium;
+  background-color: rgba(138, 134, 132, 0.329);
+  color: rgb(0, 0, 0);
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  list-style: none;
+  transition: all 2s ease;
+  border-top: 3px solid white;
+}
+.footer:hover {
+  width: 100%;
+  border-bottom: 3px solid white;
+  border-top: 3px solid transparent;
+  color: white;
+  font-family: "Bangers", cursive;
+}
+
+.caja {
+  display: flex;
+  justify-content: space-around;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  list-style: none;
+  text-decoration: none;
+  list-style: none;
+}
+.caja ul {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.medias {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 0px;
+}
+
+.redes {
+  align-items: bottom;
+  width: 50px;
+  height: 50px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  padding-top: 20px;
+}
+
+/* /////////////////////////////////////////////// FIN DEL FOOTER /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////----------------------///////////////////////////////////////////// */
+/* /////////////////////////////////////////////----------------------///////////////////////////////////////////// */
+/* /////////////////////////////////////////////    MEDIA  QUERIES    ///////////////////////////////////////////// */
+/* /////////////////////////////////////////////----------------------///////////////////////////////////////////// */
+/* /////////////////////////////////////////////----------------------///////////////////////////////////////////// */
+@media only screen and (max-width: 521px) {
+  /*Tablets [426px -> 600px]*/
+  /* ///////////////////////////////////////////// INICIO DEL ENCABEZADO ///////////////////////////////////////////// */
+  .header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(60, 133, 0);
+    border-bottom: 5px white;
+    border-bottom-style: double;
+    scrollbar-width: none;
+    display: grid;
+    justify-content: center;
+  }
+
+  .container {
+    width: 100%;
+    margin: none;
+    font-size: small;
+    color: white;
+  }
+  .container .btn-menu {
+    float: left;
+    line-height: 50px;
+    margin-left: 10px;
+    margin-right: 1vh;
+  }
+  .container .btn-menu label {
+    position: -webkit-sticky;
+    position: sticky;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+  }
+  .container .logo {
+    float: left;
+    line-height: 50px;
+    margin-left: 10px;
+    margin-right: 1vh;
+  }
+  .container .logo h1 {
+    display: none;
+  }
+  .container .menu {
+    float: right;
+    right: 20px;
+    line-height: 50px;
+    margin-left: 10px;
+  }
+  .container .menu a {
+    position: -webkit-sticky;
+    position: sticky;
+    display: inline-block;
+    padding: 1px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    border-right: 3px solid rgba(0, 0, 0, 0.5137254902);
+    border-top: 3px solid rgba(0, 0, 0, 0.5019607843);
+    font-size: 13px;
+  }
+  .container .menu .A1 {
+    background-color: rgba(4, 231, 15, 0.5333333333);
+  }
+  .container .menu .A2 {
+    background-color: rgba(236, 16, 16, 0.5568627451);
+  }
+  .container .menu .A3 {
+    background-color: rgba(4, 178, 231, 0.5490196078);
+  }
+  .container .menu .A4 {
+    background-color: rgba(231, 4, 201, 0.5411764706);
+  }
+
+  /* ///////////////////////////////////////////// FIN DEL ENCABEZADO ///////////////////////////////////////////// */
+  /* ///////////////////////////////////////////// INICIO MENU LATERAL ///////////////////////////////////////////// */
+  #btn-menu {
+    display: none;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  #btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  #btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+    background-color: transparent;
+  }
+
+  .container-menu {
+    margin-left: -38px;
+    background: #B8BAB8;
+    width: 50%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #050a05;
+    height: 100px;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+  }
+  .cont-menu nav {
+    transform: translateY(-1%);
+    background-color: rgb(255, 255, 255);
+  }
+  .cont-menu nav a {
+    display: block;
+    padding: 10px;
+    padding-left: 5px;
+    color: #000000;
+  }
+  .cont-menu .n1 {
+    background-color: rgba(4, 231, 15, 0.5411764706);
+  }
+  .cont-menu .n2 {
+    background-color: rgba(236, 16, 16, 0.5058823529);
+  }
+  .cont-menu .n3 {
+    background-color: rgba(4, 178, 231, 0.5254901961);
+  }
+  .cont-menu .n4 {
+    background-color: rgba(231, 4, 201, 0.5254901961);
+  }
+
+  /* ///////////////////////////////////////////// FIN DE MENU LATERAL ///////////////////////////////////////////// */
+  /* ///////////////////////////////////////// COMIENZO DE CONTENIDO PRINCIPAL ////////////////////////////////////// */
+  .principal {
+    margin: -10px -10px;
+  }
+
+  .titulo {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-bottom-style: double;
+    border-top-style: double;
+    border-color: antiquewhite;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  #listaDePaginas {
+    margin-left: 1px;
+    margin-top: 40px;
+  }
+  #listaDePaginas a {
+    width: 100%;
+    letter-spacing: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: white;
+    font-size: small;
+  }
+
+  .card {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    width: auto;
+    height: 330px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    box-sizing: 250px;
+    color: #c7c7c7;
+  }
+  .card img {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .contenedor-tarjetas {
+    width: auto;
+    margin: 60px 95px;
+  }
+
+  /* inicio del grid del id #grids de la linea 42 del hatml index.html y en los html de tiendas*/
+  #grids {
+    display: block;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* fin del grid del id #grids */
+  .pendiente {
+    width: 150px;
+    height: 150px;
+  }
+
+  .parrafo-inferior {
+    color: white;
+    border-bottom-style: double;
+    border-top-style: double;
+    border-color: antiquewhite;
+    margin-top: 10em;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 80px;
+    letter-spacing: 3px;
+    background-color: rgba(255, 72, 0, 0.4784313725);
+    width: 100%;
+  }
+
+  .listado {
+    font-size: medium;
+    padding-bottom: 5px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: rgba(89, 226, 10, 0.774);
+  }
+  .listado ul {
+    padding: 0px;
+  }
+
+  .form-register {
+    width: 400px;
+    background: rgba(212, 0, 0, 0.6862745098);
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    font-family: "calibri";
+    color: white;
+    text-align: center;
+    box-shadow: 1px 13px 37px rgb(148, 148, 148);
+    padding-bottom: 15px;
+    transition: all 2s ease;
+    border-top: 3px solid white;
+  }
+  .form-register:hover {
+    width: 400px;
+    background: rgba(212, 0, 0, 0.6862745098);
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    font-family: "calibri";
+    color: white;
+    text-align: center;
+    box-shadow: 1px 13px 37px rgb(148, 148, 148);
+    padding-bottom: 15px;
+    border-top: 3px solid white;
+  }
+
+  /* ///////////////////////////////////////// FIN DEL CONTENIDO PRINCIPAL ///////////////////////////////////////// */
+  /* /////////////////////////////////////////////// INICIO DEL FOOTER /////////////////////////////////////////////// */
+  .containerFooter {
+    margin: auto;
+  }
+
+  .footer {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    justify-content: center;
+    color: rgb(206, 206, 206);
+    border-top: 3px solid white;
+    background-color: rgba(255, 0, 191, 0.288);
+    font-size: x-small;
+  }
+
+  .caja h2 {
+    font-size: medium;
+  }
+  .caja h2 ul li {
+    display: none;
+  }
+
+  .medias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cajaDeRedes {
+    display: grid;
+    justify-items: center;
+    margin-right: 25px;
+  }
+
+  .redes {
+    display: inline-block;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    padding-top: 15px;
+    font-size: 15px;
+  }
+
+  /* ///////////////////////////////////////////// FIN DEL FOOTER ///////////////////////////////////////////// */
+}/*# sourceMappingURL=sass.css.map */
