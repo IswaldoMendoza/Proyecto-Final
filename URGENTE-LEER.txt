@@ -1,22 +1,3 @@
-En la pagina "tiendita3.html", veran que me falto linkear
-bien, la direccion de la hoja css era anterior a la 
-edicion de la pagina, luego de aplicar sass crei haber
-ingresado la direccion pero me olvide en esta hoja de 
-aplicarlo.
-
-En el la pagina que esta subida al servidor esta disponible
-la pagina "tiendita3.html" con la direccion web correcta.
-
-En este momento dejo este .txt para aclarar esto porque
-no tengo computadora y toda esta pagina la termine de 
-hacer entre una tablet y un telefono con una aplicacion
-de editor de codigo. 
-
-Espero entiendan que se me complico un poco y no he podido
-solucionar esta pagina, pero en lo que tenga un momento
-con una computadora disponible lo arreglo para que este
-todo en orden.
-
 Saludos y buen dia a quien lee esto. <3
 
 En la etiqueta Meta para las keywords de SEO se agregaron:
